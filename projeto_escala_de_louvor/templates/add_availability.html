@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Adicionar Disponibilidade</title>
+</head>
+<body>
+    <h1>Adicionar Disponibilidade</h1>
+    <form action="/add_availability" method="post">
+        <label for="name">Selecionar Nome:</label>
+        <select id="name" name="name">
+            {% for user in users %}
+            <option value="{{ user.name }}">{{ user.name }}</option>
+            {% endfor %}
+        </select>
+        <br>
+        <label for="dates">Escolher Sábados Disponíveis:</label>
+        <br>
+        {% for saturday in saturdays %}
+            <input type="checkbox" name="dates" value="{{ saturday }}">
+            <label for="dates">{{ saturday }} do próximo mês</label><br>
+        {% endfor %}
+        <button type="submit">Salvar Disponibilidade</button>
+    </form>
+    <a href="/">Voltar para a página inicial</a>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escala do Louvor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="unavailableDays" class="days-container">
+        <h2>Escala do Louvor</h2>
+        <div id="registerForm">
+            <h3>Registro de Disponibilidade</h3>
+            <form id="personForm">
+                <label for="personName">Nome da Pessoa:</label>
+                <input type="text" id="personName">
+                <label for="voiceType">Tipo de Voz:</label>
+                <select id="voiceType" name="voiceType">
+                    <option value="soprano">Soprano</option>
+                    <option value="contralto">Contralto</option>
+                    <option value="tenor">Tenor</option>
+                </select>
+                <h4>Sábados Indisponíveis:</h4>
+                <div id="unavailableDays" style="text-align: left;"></div>
+                <button type="button" onclick="registerPerson()">Registrar</button>
+            </form>
+        </div>
+        </div>
+        <div id="adminSection" style="display: none;">
+            <h3>Gerar Escala</h3>
+            <label for="adminPassword">Senha do Administrador:</label>
+            <input type="password" id="adminPassword">
+            <button onclick="authenticateAdmin()">Entrar</button>
+            <div id="output" style="display: none;">
+                <h3>Escalonamento:</h3>
+                <div id="scheduleList"></div>
+            </div>
+        </div>
+        <div id="scheduleHistory">
+            <h3>Histórico de Escalas</h3>
+            <label for="queryDate">Consultar escala para a data:</label>
+            <input type="date" id="queryDate">
+            <button onclick="querySchedule()">Consultar</button>
+            <div id="scheduleResult"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

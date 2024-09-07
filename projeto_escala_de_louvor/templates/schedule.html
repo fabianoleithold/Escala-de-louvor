@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Escala de Louvor</title>
+</head>
+<body>
+    <h1>Escala de Louvor</h1>
+    {% for date, voices in schedule.items() %}
+    <h2>Sábado: {{ date }}</h2>
+    <p>Sopranos: {{ voices['soprano'] }}</p>
+    <p>Contraltos: {{ voices['contralto'] }}</p>
+    <p>Tenores: {{ voices['tenor'] }}</p>
+    {% endfor %}
+    <a href="/">Voltar para a página inicial</a>
+</body>
+</html>

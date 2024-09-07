@@ -1,0 +1,47 @@
+[
+    {
+        "name": "Leandro Lima",
+        "voice": "tenor",
+        "phone": "999999999",
+        "availability": [
+            "4",
+            "18"
+        ]
+    },
+    {
+        "name": "Priscila",
+        "voice": "contralto",
+        "phone": "88888888",
+        "availability": [
+            "4",
+            "25"
+        ]
+    },
+    {
+        "name": "Andr\u00e9",
+        "voice": "tenor",
+        "phone": "777777777",
+        "availability": [
+            "18",
+            "25"
+        ]
+    },
+    {
+        "name": "Tito",
+        "voice": "tenor",
+        "phone": "8787878778",
+        "availability": [
+            "11",
+            "18"
+        ]
+    },
+    {
+        "name": "Walkiria",
+        "voice": "soprano",
+        "phone": "98879494797",
+        "availability": [
+            "4",
+            "11"
+        ]
+    }
+]
