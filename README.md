@@ -1,4 +1,5 @@
-Este projeto é um sistema para gerenciar a escala de louvor de uma igreja, permitindo o registro de pessoas e suas disponibilidades para os sábados do mês. Ele oferece as seguintes funcionalidades:
+Este projeto é um sistema para gerenciar a escala de louvor de uma igreja, permitindo o registro de pessoas e suas disponibilidades para os sábados do mês. Foi desenvolvido durante a IMersao Dev - Alura.
+Ele oferece as seguintes funcionalidades:
 
 Registro de Disponibilidade: Usuários podem registrar seus nomes, tipos de voz (Soprano, Contralto, Tenor), e marcar os sábados do mês em que estão indisponíveis.
 
